@@ -1,4 +1,4 @@
 
 # webSite
 ## 🔗 Links
-[![webSite](logo.png)](https://timeflowsneverend.github.io/webSite/)
+[![webSite](logo.ico)](https://timeflowsneverend.github.io/webSite/)
