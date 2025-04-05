@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="logo.ico" type="image/x-icon">
+    <title>Hotel</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            line-height: 1.6;
+        }
+        header{
+            width: 100%;
+            background-color: gray;
+            box-shadow: 0 2px 5px black;
+        }
+        nav{
+            display:flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 5%;
+            max-width: 1200px;
+        }
+        .list{
+            display:flex;
+            gap: 2rem;
+            list-style-type:none;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        a:hover{
+            color:blue;
+            text-decoration: underline;
+        }
+        .logo{
+            width: 40px;
+            height: 40px;
+            background-image: url('logo.png');
+            background-size:contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .search{
+            width: 40px;
+            height: 40px;
+            background-image: url('search.png');
+            background-size:contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo"></div>
+            <ul class="list">
+                <li><a href="#first">First</a></li>
+                <li><a href="#second">Second</a></li>
+                <li><a href="#third">Third</a></li>
+            </ul>
+            <a href="#" class="search"></a>
+        </nav>
+    </header>
+    <main>
+        <section id="first">First Section </section>
+        <section id="second">Section Section</section>
+        <section id="third">Third Section</section>
+    </main>
+    <footer>
+        <p>Footer</p>
+    </footer>
+</body>
+</html>
