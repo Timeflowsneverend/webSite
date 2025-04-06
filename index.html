@@ -11,8 +11,7 @@
         body {
             height: 100%;
             margin: 0;
-            line-height: 1.6;
-            padding-top: 47px; /* Adjusted for fixed header */
+            line-height: 1.6;/* Adjusted for fixed header */
             font-family: Arial, sans-serif;
             background-color: #f4f4f4;
             color: #333;
@@ -21,6 +20,7 @@
             text-align: center;
             overflow-x: hidden;
             scroll-behavior: smooth;
+            padding-top: 50px;
         }
 
         header {
@@ -84,6 +84,8 @@
 
         section {
             flex-grow: 1;
+            height: 50vh;
+            scroll-margin-top: 80px; /* Added to account for fixed header */
         }
         .hero{
             background-image:linear-gradient(rgba(0,0,0,0.5),rgba(111,111,111,0.5)), url('hero.png');
@@ -92,7 +94,9 @@
             text-align: center;
             justify-content: center;
             align-items: center;
-            font-
+            height: 60vh;
+            display: flex;
+            flex-direction: column;
         }
         .hero h1 {
             font-size: 3rem;
@@ -202,6 +206,6 @@
             <li>Telephone: 012-345-678</li>
         </ul>
     </footer>
-</body>
+    </body>
 
 </html>
