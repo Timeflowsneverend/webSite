@@ -12,18 +12,32 @@
             height: 100%;
             margin: 0;
             line-height: 1.6;
+            padding-top: 47px; /* Adjusted for fixed header */
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            font-size: 16px;
+            font-weight: 400;
+            text-align: center;
+            overflow-x: hidden;
+            scroll-behavior: smooth;
         }
 
         header {
             width: 100%;
             background-color: gray;
-            box-shadow: 0 2px 5px black;
+            box-shadow: 0 3px 5px black;
+            position:fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
         }
 
         nav {
             display: flex;
             justify-content: space-between;
             align-items: center;
+            margin: 0 auto;
             padding: 1rem 5%;
             max-width: 1200px;
         }
@@ -72,12 +86,13 @@
             flex-grow: 1;
         }
         .hero{
-            background-image: url('hero.png');
+            background-image:linear-gradient(rgba(0,0,0,0.5),rgba(111,111,111,0.5)), url('hero.png');
             background-size: cover;
             background-position: center;
             text-align: center;
             justify-content: center;
             align-items: center;
+            font-
         }
         .hero h1 {
             font-size: 3rem;
@@ -128,6 +143,24 @@
         .about a:hover {
             text-decoration: underline;
         }
+        span{
+            border: 2px solid black;
+            padding: 0.5rem;
+            border-radius: 5px;
+            background-color: rgba(0,0,0,0.5);
+        }
+        #first {
+            background-color: #f4f4f4;
+            padding: 2rem;
+        }
+        #second {
+            background-color: #e2e2e2;
+            padding: 2rem;
+        }
+        #third {
+            background-color: #d0d0d0;
+            padding: 2rem;
+        }
     </style>
 </head>
 
@@ -146,8 +179,8 @@
     </header>
     <main>
         <section class="hero">
-            <h1>Welcome to Our Hotel</h1>
-            <p>Your comfort is our priority.</p>
+            <h1><span>Welcome to Our Hotel</span></h1>
+            <p><span>Your comfort is our priority.</span></p>
             <button class="bn-btn">Book Now</button>
         </section>
         <section id="first" class="first">First Section </section>
@@ -156,16 +189,17 @@
     </main>
     <footer>
         <ul class="about">
-            <li><a href="#one">One</a></li>
+            <li><a href="#about">About</a></li>
             <li><a href="#two">Tow</a></li>
             <li><a href="#three">Three</a></li>
             <li><a href="#four">Four</a></li>
         </ul>
         <ul class="contact">
-            <li>Phone</li>
-            <li>Address</li>
-            <li>Email</li>
-            <li>Telephone</li>
+            <h4>Contact</h4>
+            <li>Phone: <i>98-123-456-78</i></li>
+            <li>Address: Itahari</li>
+            <li>Email: dummy@gmail.com</li>
+            <li>Telephone: 012-345-678</li>
         </ul>
     </footer>
 </body>
