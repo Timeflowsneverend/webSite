@@ -1,61 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="logo.ico" type="image/x-icon">
     <title>Hotel</title>
     <style>
-        *{
+        html,
+        body {
+            height: 100%;
             margin: 0;
-            padding: 0;
-        }
-        body{
             line-height: 1.6;
         }
-        header{
+
+        header {
             width: 100%;
             background-color: gray;
             box-shadow: 0 2px 5px black;
         }
-        nav{
-            display:flex;
+
+        nav {
+            display: flex;
             justify-content: space-between;
             align-items: center;
             padding: 1rem 5%;
             max-width: 1200px;
         }
-        .list{
-            display:flex;
+
+        .list {
+            display: flex;
             gap: 2rem;
-            list-style-type:none;
+            list-style-type: none;
         }
-        a{
+
+        a {
             text-decoration: none;
             color: black;
         }
-        a:hover{
-            color:blue;
+
+        a:hover {
+            color: blue;
             text-decoration: underline;
         }
-        .logo{
+
+        .logo {
             width: 40px;
             height: 40px;
             background-image: url('logo.png');
-            background-size:contain;
+            background-size: contain;
             background-repeat: no-repeat;
             background-position: center;
         }
-        .search{
+
+        .search {
             width: 40px;
             height: 40px;
             background-image: url('search.png');
-            background-size:contain;
+            background-size: contain;
             background-repeat: no-repeat;
             background-position: center;
         }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            min-height: 89vh;
+        }
+
+        section {
+            flex-grow: 1;
+        }
+        .hero{
+            background-image: url('hero.png');
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            color: white;
+            margin: 0;
+        }
+        .hero p {
+            font-size: 1.5rem;
+            color: white;
+        }
+        .bn-btn {
+            background-color: rgb(94, 94, 97);
+            color: white;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+        .bn-btn:hover {
+            background-color: rgb(79, 79, 80);
+        }
+
+        footer {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            padding: 2rem 5%;
+            background-color: gray;
+            margin-top: auto;
+        }
+
+        .about,
+        .contact {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .about li,
+        .contact li {
+            margin-bottom: 0.5rem;
+        }
+
+        .about a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .about a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
+
 <body>
     <!-- Header Section  -->
     <header>
@@ -70,12 +145,29 @@
         </nav>
     </header>
     <main>
-        <section id="first">First Section </section>
-        <section id="second">Section Section</section>
-        <section id="third">Third Section</section>
+        <section class="hero">
+            <h1>Welcome to Our Hotel</h1>
+            <p>Your comfort is our priority.</p>
+            <button class="bn-btn">Book Now</button>
+        </section>
+        <section id="first" class="first">First Section </section>
+        <section id="second" class="second">Section Section</section>
+        <section id="third" class="third">Third Section</section>
     </main>
     <footer>
-        <p>Footer</p>
+        <ul class="about">
+            <li><a href="#one">One</a></li>
+            <li><a href="#two">Tow</a></li>
+            <li><a href="#three">Three</a></li>
+            <li><a href="#four">Four</a></li>
+        </ul>
+        <ul class="contact">
+            <li>Phone</li>
+            <li>Address</li>
+            <li>Email</li>
+            <li>Telephone</li>
+        </ul>
     </footer>
 </body>
+
 </html>
